@@ -1,9 +1,9 @@
 ---
-publishDate: 2024-03-18T00:00:00Z
+publishDate: 2024-03-18
 author: 流浪的灵魂
 title: 关于astro框架的一些记录
-excerpt: 关于astro框架的一些记录
-image: https://images.unsplash.com/photo-1516996087931-5ae405802f9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80
+excerpt: 关于astro框架的一些记录,个人的随笔
+image: https://picx.zhimg.com/80/v2-91c64b8b4dc71a9fda89d2188d8c0a3a_720w.webp?source=1def8aca
 category: Tutorials
 tags:
   - astro
@@ -12,23 +12,29 @@ metadata:
   canonical: https://astrowind.vercel.app/first-post
 ---
 
-这里记录第一个需要些的部分内容
+## 为什么要记录这些
 
-## Nostra torquent consequat volutpat aliquet neque
+今天闲来无事，准备开坑记录一下使用astro框架了解相关的知识，作为萌新，随时记录一些遇到问题
+文章内容琐碎且凌乱，遇到什么就写什么
 
-根目录文件 navigation.js  里面可以修改首页链接里面的信息
+## 关于文件级别的一些记录
 
-Iaculis arcu commodo dis proin vitae himenaeos, ante tristique potenti magna ligula, sagittis libero fermentum ullamcorper sociis. Sem eros non arcu natoque fringilla lacus vestibulum lacinia integer mus viverra in proin, sagittis fusce tortor erat enim rutrum vulputate curae laoreet class diam. Inceptos convallis ac nisi natoque nam quisque magnis ut nullam fringilla curae, luctus lacus purus habitant erat magna molestie class habitasse metus, nibh lobortis tortor curabitur neque phasellus feugiat netus morbi parturient. Neque malesuada mauris justo himenaeos pharetra, ullamcorper enim ligula a nulla consequat, eget vivamus velit ridiculus.
+- 根目录文件 navigation.js  里面可以修改首页链接里面的信息
 
-## Praesent tellus ad sapien erat or
+## frontmatter中的一些记录
 
-- Quam orci nostra mi nulla, hac a.
+- publishDate --文章发布的时间   参考格式为 2024-03-18
 
-- Interdum iaculis quis tellus sociis orci nulla, quam rutrum conubia tortor primis.
+- author -- 作者 根据实际加上
 
-- Non felis sem placerat aenean duis, ornare turpis nostra.
+- title -- 标题 当前文章的标题
 
-- Habitasse duis sociis sagittis cursus, ante dictumst commodo.
+- excerpt -- 描述 文章的摘要
+- image -- 文章首图的图片地址  url
+- category -- 所属的分类
+- tags -- 标签
+- metadata -- 元数据
+  - canonical 标准页面链接 （具体作用猜测可能为了seo使用）
 
 Duis maecenas massa habitasse inceptos imperdiet scelerisque at condimentum ultrices, nam dui leo enim taciti varius cras habitant pretium rhoncus, ut hac euismod nostra metus sagittis mi aenean. Quam eleifend aliquet litora eget a tempor, ultricies integer vestibulum non felis sodales, eros diam massa libero iaculis.
 
