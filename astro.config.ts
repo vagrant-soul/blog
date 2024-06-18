@@ -5,6 +5,7 @@ import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import sitemap from "@astrojs/sitemap";
 import { SITE } from "./src/config";
+import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,6 +16,9 @@ export default defineConfig({
     }),
     react(),
     sitemap(),
+    starlight({
+      title: '我的令人愉悦的文档网站',
+    }),
   ],
   markdown: {
     remarkPlugins: [
