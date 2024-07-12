@@ -55,7 +55,9 @@ module.exports = {
       },
       fontFamily: {
         mono: ["IBM Plex Mono", "monospace"],
-        fontfix: ["LXGW WenKai Screen"],
+        // Bug 修复：将未定义的 serif 改写成 sans-serif
+        fontfix: ["LXGW WenKai Screen", "sans-serif"],
+       
       },
 
       typography: {

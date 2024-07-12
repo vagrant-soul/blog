@@ -56,7 +56,7 @@ src/styles/base.css
    }
    section,
 ```
-接下来需要引入霞鹜文楷字体的 Stylesheet，为了避免阻塞渲染，可以将 media 设置为 print，在加载完成后再将 media 设置为 all。同时，采用饿了么提供的 CDN 提高加载速度，相关代码添加到 src/layouts/Layout.astro 中：
+接下来需要引入霞鹜文楷字体的 Stylesheet，为了避免阻塞渲染，可以将 media 设置为 print，在加载完成后再将 media 设置为 all。同时，使用的阿里的npm镜像[可以看这里](https://github.com/CMBill/lxgw-wenkai-screen-web)，相关代码添加到 src/layouts/Layout.astro 中：
 同时，把上面文件中引用的google字体换个国内的加速，这里用的是loli.net
 ```diff
 src/layouts/Layout.astro
@@ -70,7 +70,7 @@ src/layouts/Layout.astro
 +    <!-- 用cdn加速字体样式，LXGW WenKai Font 霞鹜文楷 -->
 +    <link
 +      rel="stylesheet"
-+      href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css"
++      href="https://registry.npmmirror.com/lxgw-wenkai-screen-web/1.321.0/files/style.css"
 +      media="print"
 +      onload="this.media='all'"
 +    />
