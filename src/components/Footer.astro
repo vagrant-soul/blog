@@ -1,6 +1,9 @@
 ---
 import Hr from "./Hr.astro";
 import Socials from "./Socials.astro";
+import { SITE } from "@config";
+import { Image } from "astro:assets";
+import localCCLogo from "../assets/images/cc-by-nc-sa.svg";
 
 const currentYear = new Date().getFullYear();
 
@@ -16,9 +19,15 @@ const { noMarginTop = false } = Astro.props;
   <div class="footer-wrapper">
     <Socials centered />
     <div class="copyright-wrapper">
-      <span>Copyright &#169; {currentYear}</span>
-      <span class="separator">&nbsp;|&nbsp;</span>
-      <span>All rights reserved.</span>
+      <span>Copyright &#169; {currentYear}   By   {SITE.author}</span>
+      <span class="separator">&nbsp;&nbsp;</span>  
+      <a
+        class="license-link"
+        href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans"
+        target="_blank"
+      >
+        <Image src={localCCLogo} alt="CC BY-NC-SA Logo" />
+      </a>    
     </div>
   </div>
 </footer>

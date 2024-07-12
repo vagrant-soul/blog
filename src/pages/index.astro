@@ -23,7 +23,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1>修改一下标题</h1>
+      <h1>流浪的灵魂</h1>
       <a
         target="_blank"
         href="/rss.xml"
@@ -42,19 +42,8 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       </a>
 
       <p>
-        这里写简介之类的东西，暂时还没想好. 第二次修改 第三次ity
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
-      </p>
-      <p>
-        Read the blog posts or check
-        <LinkButton
-          className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
-          href="https://github.com/satnaing/astro-paper#readme"
-        >
-          README
-        </LinkButton> for more info.
-      </p>
+        在你坚持不住的时候，记得告诉自己：想一千次，不如去做一次。华丽地跌倒，胜过无谓地徘徊。任何时候你不放弃，一切都还有可能。只要你满怀希望，就会所向披靡
+      </p>      
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
@@ -72,7 +61,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       featuredPosts.length > 0 && (
         <>
           <section id="featured">
-            <h2>Featured</h2>
+            <h2>推荐</h2>
             <ul>
               {featuredPosts.map(({ data, slug }) => (
                 <Card
@@ -91,7 +80,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     {
       recentPosts.length > 0 && (
         <section id="recent-posts">
-          <h2>Recent Posts</h2>
+          <h2>最近</h2>
           <ul>
             {recentPosts.map(
               ({ data, slug }, index) =>
@@ -110,7 +99,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
     <div class="all-posts-btn-wrapper">
       <LinkButton href="/posts/">
-        All Posts
+        所有文章
         <svg xmlns="http://www.w3.org/2000/svg"
           ><path
             d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
