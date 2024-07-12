@@ -22,9 +22,10 @@ export default defineConfig({
       [
         remarkCollapse,
         {
-          test: "Table of contents",
-        },
-      ],
+          summary: "显示目录",
+          test: "Table of contents",          
+        },        
+      ],      
     ],
     shikiConfig: {
       theme: "catppuccin-mocha",

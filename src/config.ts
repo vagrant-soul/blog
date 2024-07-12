@@ -1,19 +1,19 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
-  author: "Sat Naing",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "AstroPaper",
+  website: "https://wqonline.com", // replace this with your deployed domain
+  author: "Vagrant Soul",
+  desc: "使用astropaper模板做的一个Astro框架下的博客",
+  title: "Vagrant Soul's Blog",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
-  postPerPage: 3,
+  postPerPage: 5,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
 };
 
 export const LOCALE = {
-  lang: "en", // html lang code. Set this empty and default will be "en"
-  langTag: ["en-EN"], // BCP 47 Language Tags. Set this empty [] to use the environment default
+  lang: "zh", // html lang code. Set this empty and default will be "en"
+  langTag: ["zh-CN"], // BCP 47 Language Tags. Set this empty [] to use the environment default
 } as const;
 
 export const LOGO_IMAGE = {
@@ -34,25 +34,25 @@ export const SOCIALS: SocialObjects = [
     name: "Facebook",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Facebook`,
-    active: true,
+    active: false,
   },
   {
     name: "Instagram",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Instagram`,
-    active: true,
+    active: false,
   },
   {
     name: "LinkedIn",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on LinkedIn`,
-    active: true,
+    active: false,
   },
   {
     name: "Mail",
-    href: "mailto:yourmail@gmail.com",
+    href: "mailto:wqonline@zoho.com",
     linkTitle: `Send an email to ${SITE.title}`,
-    active: false,
+    active: true,
   },
   {
     name: "Twitter",
