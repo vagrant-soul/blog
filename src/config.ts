@@ -26,7 +26,7 @@ export const LOGO_IMAGE = {
 export const SOCIALS: SocialObjects = [
   {
     name: "Github",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://github.com/vagrant-soul/blog",
     linkTitle: ` ${SITE.title} on Github`,
     active: true,
   },
@@ -50,7 +50,7 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Mail",
-    href: "mailto:wqonline@zoho.com",
+    href: "mailto:wqonline@zohomail.cn",
     linkTitle: `Send an email to ${SITE.title}`,
     active: true,
   },
