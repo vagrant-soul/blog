@@ -15,6 +15,7 @@ module.exports = {
     // if one breakpoint is not enough for you
     screens: {
       sm: "640px",
+      socials: "880px" // 👈🏻 add a custom breakpoint for that component
     },
 
     extend: {

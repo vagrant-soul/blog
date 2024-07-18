@@ -1,0 +1,37 @@
+---
+import { SOCIALS } from "@config";
+import LinkButton from "./LinkButton.astro";
+import socialIcons from "@assets/socialIcons";
+---
+
+<div
+  class="socials:fixed bottom-20 right-12 flex h-auto w-6 flex-col items-center justify-between gap-3"
+>
+  {
+    SOCIALS.filter(social => social.active).map(social => (
+      <LinkButton
+        href={social.href}
+        className="p-2 hover:rotate-6 sm:p-1"
+        title={social.linkTitle}
+      >
+        <Fragment set:html={socialIcons[social.name]} />
+      </LinkButton>
+    ))
+  }
+  <div class="h-20 w-1 bg-skin-inverted"></div>
+</div>
+
+<!-- Additional Code 左侧 -->
+<div
+  class="socials:fixed top-[100px] left-12 flex h-auto w-6 flex-col items-center justify-between gap-3"
+>
+  <div class="mb-20 -rotate-0 text-lg tracking-widest single-line-text font-extrabold">
+    <a
+      href={`mailto:youremail@gmail.com`}
+      class="link-outline text-3xl hover:text-skin-accent"
+    >
+    流浪<center>|</center>是灵魂最好的安放
+    </a>
+  </div>
+  <div class="h-28 w-[0.2875rem] bg-skin-inverted"></div>
+</div>
