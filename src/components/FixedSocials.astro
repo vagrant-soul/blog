@@ -5,7 +5,7 @@ import socialIcons from "@assets/socialIcons";
 ---
 
 <div
-  class="socials:fixed bottom-20 right-12 flex h-auto w-6 flex-col items-center justify-between gap-3"
+  class="hidden socials:fixed bottom-20 right-12 socials:flex h-auto w-6 flex-col items-center justify-between gap-3"
 >
   {
     SOCIALS.filter(social => social.active).map(social => (
@@ -23,7 +23,7 @@ import socialIcons from "@assets/socialIcons";
 
 <!-- Additional Code 左侧 -->
 <div
-  class="socials:fixed top-[100px] left-12 flex h-auto w-6 flex-col items-center justify-between gap-3"
+  class="hidden socials:fixed top-[100px] left-12 socials:flex h-auto w-6 flex-col items-center justify-between gap-3"
 >
   <div class="mb-20 -rotate-0 text-lg tracking-widest single-line-text font-extrabold">
     <a

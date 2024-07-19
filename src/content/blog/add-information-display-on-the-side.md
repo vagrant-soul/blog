@@ -20,7 +20,7 @@ description: 首页增加侧边栏的一个样式的展示
 
 ```astro title="/components/FixedSocials.astro"
 <div
-  class="socials:fixed top-[100px] left-12 flex h-auto w-6 flex-col items-center justify-between gap-3"
+  class="hidden socials:fixed top-[100px] left-12 socials:flex h-auto w-6 flex-col items-center justify-between gap-3"
 >
   <div class="mb-20 -rotate-0 text-lg tracking-widest single-line-text font-extrabold">
     <a
@@ -38,3 +38,5 @@ description: 首页增加侧边栏的一个样式的展示
 `single-line-text font-extrabold`
 
 `h-28 w-[0.2875rem]`
+`hidden`
+`socials:flex`
